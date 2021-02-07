@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite_Framework">
+              <span class="suite-name border-failed">Suite_Framework</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite_Framework">
+                    <span>framework.excel.FrameworkTestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite_Framework">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite_Framework">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite_Framework">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite_Framework">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite_Framework">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite_Framework">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 1 failed,  10 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_Framework" class="hide-methods failed suite-Suite_Framework"> (hide)</a> <!-- hide-methods failed suite-Suite_Framework -->
+                      <a href="#" panel-name="suite-Suite_Framework" class="show-methods failed suite-Suite_Framework"> (show)</a> <!-- show-methods failed suite-Suite_Framework -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_Framework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_Framework -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_Framework" class="hide-methods skipped suite-Suite_Framework"> (hide)</a> <!-- hide-methods skipped suite-Suite_Framework -->
+                      <a href="#" panel-name="suite-Suite_Framework" class="show-methods skipped suite-Suite_Framework"> (show)</a> <!-- show-methods skipped suite-Suite_Framework -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_Framework">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(5, 7, -18)">Diff(5, 7, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_Framework -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite_Framework" class="hide-methods passed suite-Suite_Framework"> (hide)</a> <!-- hide-methods passed suite-Suite_Framework -->
+                      <a href="#" panel-name="suite-Suite_Framework" class="show-methods passed suite-Suite_Framework"> (show)</a> <!-- show-methods passed suite-Suite_Framework -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite_Framework">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Diff(2, 3, -1)">Diff(2, 3, -1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Registration_data(Henry, Person-3, henryP3@qqq.com, 4089)">Registration_data(Henry, Person-3, henryP3@qqq.com, 4089)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Registration_data(Helen, Person-4, helenP4@xyz.com, 6578)">Registration_data(Helen, Person-4, helenP4@xyz.com, 6578)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)">Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Registration_data(Carol, Person-2, carolP2@abc.ol, 1223)">Registration_data(Carol, Person-2, carolP2@abc.ol, 1223)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_Framework" title="framework.excel.TestNG_with_ExcelDataProvider" hash-for-method="Registration_data(Murray, Person-5, murrayP@xyz.com, 2222)">Registration_data(Murray, Person-5, murrayP@xyz.com, 2222)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite_Framework -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite_Framework" class="panel Suite_Framework">
+          <div class="suite-Suite_Framework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">framework.excel.TestNG_with_ExcelDataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_Framework-class-failed -->
+          <div class="suite-Suite_Framework-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">framework.excel.TestNG_with_ExcelDataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(5, 7, -18)">
+                  </a> <!-- Diff(5, 7, -18) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(5, 7, -18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2] but found [-18]
+	at framework.excel.TestNG_with_ExcelDataProvider.Diff(TestNG_with_ExcelDataProvider.java:205)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_Framework-class-skipped -->
+          <div class="suite-Suite_Framework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">framework.excel.TestNG_with_ExcelDataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Diff(2, 3, -1)">
+                  </a> <!-- Diff(2, 3, -1) -->
+                  <span class="method-name">Diff</span>
+                  <span class="parameters">(2, 3, -1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration_data(Henry, Person-3, henryP3@qqq.com, 4089)">
+                  </a> <!-- Registration_data(Henry, Person-3, henryP3@qqq.com, 4089) -->
+                  <span class="method-name">Registration_data</span>
+                  <span class="parameters">(Henry, Person-3, henryP3@qqq.com, 4089)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration_data(Helen, Person-4, helenP4@xyz.com, 6578)">
+                  </a> <!-- Registration_data(Helen, Person-4, helenP4@xyz.com, 6578) -->
+                  <span class="method-name">Registration_data</span>
+                  <span class="parameters">(Helen, Person-4, helenP4@xyz.com, 6578)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)">
+                  </a> <!-- Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458) -->
+                  <span class="method-name">Registration_data</span>
+                  <span class="parameters">(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration_data(Carol, Person-2, carolP2@abc.ol, 1223)">
+                  </a> <!-- Registration_data(Carol, Person-2, carolP2@abc.ol, 1223) -->
+                  <span class="method-name">Registration_data</span>
+                  <span class="parameters">(Carol, Person-2, carolP2@abc.ol, 1223)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration_data(Murray, Person-5, murrayP@xyz.com, 2222)">
+                  </a> <!-- Registration_data(Murray, Person-5, murrayP@xyz.com, 2222) -->
+                  <span class="method-name">Registration_data</span>
+                  <span class="parameters">(Murray, Person-5, murrayP@xyz.com, 2222)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_Framework-class-passed -->
+        </div> <!-- panel Suite_Framework -->
+        <div panel-name="test-xml-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/utkarsh20thgmai/eclipse-workspace/com.simplilearn.project/framework.excel.FrameworkTestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite_Framework&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test_Framework&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;framework.excel.TestNG_with_ExcelDataProvider&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test_Framework --&gt;
+&lt;/suite&gt; &lt;!-- Suite_Framework --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite_Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test_Framework (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite_Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite_Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite_Framework');
+function tableData_Suite_Framework() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Registration_data')
+data.setCell(0, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(0, 3, 23174);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Registration_data')
+data.setCell(1, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(1, 3, 23060);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Registration_data')
+data.setCell(2, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(2, 3, 23046);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Registration_data')
+data.setCell(3, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(3, 3, 23035);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Registration_data')
+data.setCell(4, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(4, 3, 23026);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Diff')
+data.setCell(5, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(5, 3, 7);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Diff')
+data.setCell(6, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Diff')
+data.setCell(7, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Diff')
+data.setCell(8, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Diff')
+data.setCell(9, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Diff')
+data.setCell(10, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Diff')
+data.setCell(11, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Diff')
+data.setCell(12, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Diff')
+data.setCell(13, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Diff')
+data.setCell(14, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Diff')
+data.setCell(15, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Diff')
+data.setCell(16, 2, 'framework.excel.TestNG_with_ExcelDataProvider')
+data.setCell(16, 3, 1);
+window.suiteTableData['Suite_Framework']= { tableData: data, tableDiv: 'times-div-Suite_Framework'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite_Framework">
+              </div> <!-- times-div-Suite_Framework -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite_Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration_data(Henry, Person-3, henryP3@qqq.com, 4089)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [ExcelAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration_data(Helen, Person-4, helenP4@xyz.com, 6578)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [ExcelAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [ExcelAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration_data(Carol, Person-2, carolP2@abc.ol, 1223)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [ExcelAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration_data(Murray, Person-5, murrayP@xyz.com, 2222)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [ExcelAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(2, 3, -1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+                <span class="reporter-method-output">********** End of the @Test which uses [ExcelAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Diff(5, 7, -18)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">********** Inside the @Test which uses [MethodAsDataProvider] data provider</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite_Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.excel.TestNG_with_ExcelDataProvider</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">2637 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Diff(2, 3, -1)</span>
+                <span class="method-start">21392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Diff(5, 7, -18)</span>
+                <span class="method-start">21434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Registration_data(Jimmy, Person-1, jimmyP1@xyz.com, 9576843458)</span>
+                <span class="method-start">23745 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Registration_data(Carol, Person-2, carolP2@abc.ol, 1223)</span>
+                <span class="method-start">46920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Registration_data(Henry, Person-3, henryP3@qqq.com, 4089)</span>
+                <span class="method-start">69948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Registration_data(Helen, Person-4, helenP4@xyz.com, 6578)</span>
+                <span class="method-start">92996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Registration_data(Murray, Person-5, murrayP@xyz.com, 2222)</span>
+                <span class="method-start">116057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">139131 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

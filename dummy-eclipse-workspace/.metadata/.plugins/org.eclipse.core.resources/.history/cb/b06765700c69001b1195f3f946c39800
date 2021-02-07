@@ -1,0 +1,11 @@
+package framework.excel;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+// reference --> toolsqa.com
+@Retention (RetentionPolicy.RUNTIME)
+public @interface CustomTestNGAnnotation {
+	int value() default 0;	
+
+}

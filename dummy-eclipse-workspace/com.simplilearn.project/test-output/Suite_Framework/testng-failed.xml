@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_Framework]">
+  <test thread-count="5" name="Test_Framework(failed)">
+    <classes>
+      <class name="framework.excel.TestNG_with_ExcelDataProvider">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="Diff" invocation-numbers="1 1 1 1 1 1 1 1 1 1 1"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- framework.excel.TestNG_with_ExcelDataProvider -->
+    </classes>
+  </test> <!-- Test_Framework(failed) -->
+</suite> <!-- Failed suite [Suite_Framework] -->

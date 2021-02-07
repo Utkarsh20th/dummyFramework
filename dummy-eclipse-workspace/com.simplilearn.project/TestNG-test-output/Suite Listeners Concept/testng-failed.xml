@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite Listeners Concept]">
+  <listeners>
+    <listener class-name="com.javatpoint.TestNG.ListenersConcept_Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test Listeners Concept(failed)">
+    <classes>
+      <class name="com.javatpoint.TestNG.ListenersConcept_Testcases">
+        <methods>
+          <include name="testMeantToFail"/>
+        </methods>
+      </class> <!-- com.javatpoint.TestNG.ListenersConcept_Testcases -->
+    </classes>
+  </test> <!-- Test Listeners Concept(failed) -->
+</suite> <!-- Failed suite [Suite Listeners Concept] -->

@@ -1,0 +1,25 @@
+package framework.excel;
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+import framework.excel.CustomTestNGAnnotation;
+
+public class Listener_RetryAnalyzer implements IRetryAnalyzer {
+
+	int counter = 0;
+
+ // reference --> toolsqa.com
+	@Override
+	public boolean retry(ITestResult result) {
+
+		CustomTestNGAnnotation annotation = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(CustomTestNGAnnotation.class);
+		if((annotation != null) && (counter < annotation.value())) {
+			counter++;
+			return true;
+			
+		}
+		return false;
+		
+	}
+}

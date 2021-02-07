@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>         <!-- -Dtestng.dtd.http=true -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite Parallel Testing">
+  <test name="Test Parallel Testing" parallel = "methods" thread-count = "2">
+    <classes>
+      <class name="com.toolsqa.DataProviders.ParallelTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>                          <!-- -Dtestng.dtd.http=true -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite F_V">
+  <test name="Test F">
+    <parameter name = "finput1" value  = "Mango"/>
+    <parameter name = "finput2" value  = "Aam"/>
+    <parameter name = "finput3" value  = "Orange"/>
+    <classes>
+      <class name="com.javatpoint.TestNG.Fruits"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="Test V">
+    <parameter name = "vinput1" value  = "Cauliflower"/>
+    <parameter name = "vinput2" value  = "Potato"/>
+    <classes>
+      <class name="com.javatpoint.TestNG.Vegetables"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

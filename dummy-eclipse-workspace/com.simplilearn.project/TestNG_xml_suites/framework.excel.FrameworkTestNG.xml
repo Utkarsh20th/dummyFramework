@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>                                     <!-- In case .xml file execution fails, 1) select the .xml file, 2) right-click and select "Run As -> Run Configurations", 3) select "Arguments" tab, 4) paste the configuration message -Dtestng.dtd.http=true in "VM Arguments field", 5) click "Apply" and then "Run"   -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >               <!-- Alternatively just us "https protocol" inside the .xml file. Code: <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > -->
+<suite name="Suite_Framework">
+  <test name="Test_Framework">
+    <classes>
+      <class name="framework.excel.TestNG_with_ExcelDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

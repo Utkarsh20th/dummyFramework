@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>                                     <!-- -Dtestng.dtd.http=true -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite_Framework">
+  <test name="Test_Framework">
+    <classes>
+      <class name="framework.excel.TestNG_with_ExcelDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

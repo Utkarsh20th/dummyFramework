@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>                          <!-- -Dtestng.dtd.http=true -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Loan_Department">
+  <test name="Personal_Loan">
+    <classes>
+      <class name="com.javatpoint.TestNG.module1"/>
+      <class name="com.javatpoint.TestNG.module2"/>
+    </classes>
+  </test>  <!--Test-->
+</suite>  <!--Suite-->
